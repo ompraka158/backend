@@ -1,20 +1,13 @@
 var mongoose=require('mongoose');
 var Schema=mongoose.Schema;
 var TechnologySchema =new Schema({
-	
-
 	name:{
 		type:String,
 		unique:true
 	},
-	
-	implementation:{
-		
+	implementation:{	
 		type:String	
-	},
-	
-	
-	
+	},	
 });
-	module.exports= mongoose.model('Technology',TechnologySchema);
-		
+
+module.exports= mongoose.model('Technology',TechnologySchema);		
